@@ -10,15 +10,30 @@ import Foundation
 print("7:30 Voce acordou")
 
 print("Voce gostaria de tomar banho?")
-var resposta = readLine()
-if resposta == "sim" {
-    print("voce tomou banho")
-} else if  resposta == "nao" {
+var validAnswer = false
+
+while validAnswer != true {
+    print("Digite sim ou não")
+    let resposta = readLine()
+    if resposta == "sim" {
+        validAnswer = true
+        print("voce tomou banho")
+} else if  resposta == "não" {
+    validAnswer = true
     print("voce deixou para depois")
-} else {
-    print("Resposta errada")
+    }
 }
 
+//while (resposta != "sim" || resposta != "não"){
+//    print("Digite sim ou não")
+//    // ||
+//    if resposta == "sim" {
+//    print("voce tomou banho")
+//} else if  resposta == "não" {
+//    print("voce deixou para depois")
+//    }
+//
+//}
 print("7:40 hora do café da manhã")
 
 print("Voce gostaria de comer pão com ovo ou cuscuz com ovo?")
