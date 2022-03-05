@@ -1,0 +1,41 @@
+//
+//  main.swift
+//  teste
+//
+//  Created by aluno on 05/03/22.
+//
+
+import Foundation
+
+print("7:30 Voce acordou")
+
+print("Voce gostaria de tomar banho?")
+var resposta = readLine()
+if resposta == "sim" {
+    print("voce tomou banho")
+} else if  resposta == "nao" {
+    print("voce deixou para depois")
+} else {
+    print("Resposta errada")
+}
+
+print("7:40 hora do café da manhã")
+
+print("Voce gostaria de comer pão com ovo ou cuscuz com ovo?")
+var resposta1 = readLine()
+if resposta1 == "pao com ovo" {
+    print("voce comeu pão com ovo")
+} else { resposta1 = "cuscuz com ovo"
+    print("voce comeu cuscuz com ovo")
+}
+
+print("8:00 hora de escovar os dentes")
+
+print("Voce gostaria de escovar os dentes?")
+var resposta2 = readLine()
+if resposta2 == "sim" {
+    print("voce escovou os dentes")
+} else { resposta2 = "nao"
+    print("voce está com a boca suja")
+}
+
